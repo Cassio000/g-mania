@@ -11,33 +11,43 @@
 <body>
     <header>
         <nav id="menu">
-            <a href="index.html">home</a>
-            <a href="carrinho.html">carrinho de compras</a>
-            <a href="login.html">login</a>
+            <a href="index.html">
+                <img src="imagens/logo/logo.png" alt="Game Mania" width="10%" height="15%" />
+            </a>
+            <a href="index.html">Home</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="login.html">Login</a>
         </nav>
+        <form class="menu--options--search">
+            <input type="search" name="query" id="query" placeholder="O que procura?">
+            <button type="submit" class="menu--options--image">
+                <img src="imagens/logo/lupa.png" alt="Pesquisar">
+            </button>
+        </form>
         <h1> Bem-vindo à página do seu carrinho!</h1>
-        <p>Aqui você encontra seus produtos</p>
+        <p>Aqui você encontra o conteudo do seu carrinho</p>
     </header>
     <footer>
         <div style="float:left">
-            <p>autor: SENAI-SP</p>
             <dl>INSTITUCIONAL
-                <dd>Empresa</dd>
-                <dd>Como comprar</dd>
-                <dd>Segurança</dd>
-                <dd>Termos e condições de pagamento</dd>
-                <dd>Tempo de garantia</dd>
+                <dd><a href="institucional.html#i1">Empresa</a></dd>
+                <dd><a href="institucional.html#i2">Como comprar</a></dd>
+                <dd><a href="institucional.html#i3">Segurança</a></dd>
+                <dd><a href="institucional.html#i4">Termos e condições de pagamento</a></dd>
+                <dd><a href="institucional.html#i5">Tempo de garantia</a></dd>
             </dl>
         </div>
         <div style="float:right">
-            <p>março de 2021</p>
             <dl>ATENDIMENTO
                 <dt>FONE: 11-99999-9999</dt>
-                <dt>EMAIL: gamemania@gamemania.com.br</dt>
+                <dt>E-mail:<a href="mailto:gamemania@gamemania.com.br">gamemania@gamemania.com.br</a></dt>
                 <dt>Atendimento de segunda a quinta das 8h às 18h e as sextas das 8h às 17h.</dt>
                 <br>
-                <dd><a href="https://www.instagram.com/">Instagram.com/gamemania</a></dd>
-                <dd><a href="https://www.facebook.com/">Facebook.com/gamemania</a></dd>
+                <dd><a href="https://www.instagram.com/" target="_blank">
+                    <img src="imagens/Icons/instagram.png" alt="Instagram" width="10%" height="10%">@gamemania</a></dd>
+                <dd><a href="https://www.facebook.com/" target="_blank">
+                    <img src="imagens/Icons/facebook.png" alt="facebook" width="10%" height="10%">Gamemania</a></dd>
             </dl>
         </div>
     </footer>
