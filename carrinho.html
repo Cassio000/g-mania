@@ -7,49 +7,63 @@
     <meta name="keywords" content="Jogos, Online, Games, Computador, Notebook">
     <meta name="author" content="Cassio Carvalho">
     <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://kit.fontawesome.com/666b78af7c.js" crossorigin="anonymous"></script>
   </head>
 <body>
     <header>
-        <nav id="menu">
-            <a href="index.html">
-                <img src="imagens/logo/logo.png" alt="Game Mania" width="10%" height="15%" />
+        <nav class="menu">
+            <a class="menu-img" href="index.html">
+                <img src="imagens/logo/logo.png" alt="Game Mania" width="100px" height="40px">
             </a>
-            <a href="index.html">Home</a>
-            <a href="carrinho.html">Carrinho</a>
-            <a href="produtos.html">Produtos</a>
-            <a href="login.html">Login</a>
+            <form class="menu-link">
+                <input type="search" name="query" id="query" placeholder="O que procura?">
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>                
+            </form>
+            <a class="menu-link" href="index.html"><i class="fas fa-home"></i>Home</a>
+            <a class="menu-link" href="carrinho.html"><i class="fas fa-shopping-cart"></i>Carrinho</a>
+            <a class="menu-link" href="produtos.html">Produtos</a>
+            <a class="menu-link" href="login.html"><i class="fas fa-user" _mstvisible="2">Login</i></a>
         </nav>
-        <form class="menu--options--search">
-            <input type="search" name="query" id="query" placeholder="O que procura?">
-            <button type="submit" class="menu--options--image">
-                <img src="imagens/logo/lupa.png" alt="Pesquisar">
-            </button>
-        </form>
+    </header>
+
+    <section class="container stretch">
         <h1> Bem-vindo à página do seu carrinho!</h1>
         <p>Aqui você encontra o conteudo do seu carrinho</p>
-    </header>
-    <footer>
-        <div style="float:left">
-            <dl>INSTITUCIONAL
-                <dd><a href="institucional.html#i1">Empresa</a></dd>
-                <dd><a href="institucional.html#i2">Como comprar</a></dd>
-                <dd><a href="institucional.html#i3">Segurança</a></dd>
-                <dd><a href="institucional.html#i4">Termos e condições de pagamento</a></dd>
-                <dd><a href="institucional.html#i5">Tempo de garantia</a></dd>
-            </dl>
-        </div>
-        <div style="float:right">
-            <dl>ATENDIMENTO
-                <dt>FONE: 11-99999-9999</dt>
-                <dt>E-mail:<a href="mailto:gamemania@gamemania.com.br">gamemania@gamemania.com.br</a></dt>
-                <dt>Atendimento de segunda a quinta das 8h às 18h e as sextas das 8h às 17h.</dt>
-                <br>
-                <dd><a href="https://www.instagram.com/" target="_blank">
-                    <img src="imagens/Icons/instagram.png" alt="Instagram" width="10%" height="10%">@gamemania</a></dd>
-                <dd><a href="https://www.facebook.com/" target="_blank">
-                    <img src="imagens/Icons/facebook.png" alt="facebook" width="10%" height="10%">Gamemania</a></dd>
-            </dl>
-        </div>
-    </footer>
+    </section>
+
+        <section class="flooter stretch flex">
+       
+            <div class="item1">
+                <dl>
+                    <dd>INSTITUCIONAL</dd>
+                    <dd><a href="institucional.html#i1">Empresa</a></dd>
+                    <dd><a href="institucional.html#i2">Como comprar</a></dd>
+                    <dd><a href="institucional.html#i3">Segurança</a></dd>
+                    <dd><a href="institucional.html#i4">Política de privacidade</a></dd>
+                    <dd><a href="institucional.html#i5">Tempo de garantia</a></dd>
+                </dl>
+            </div>
+            <div class="item1">
+                <dl>
+                    <dt>ATENDIMENTO</dt><br>
+                    <dt><i class="fas fa-phone-square-alt"></i>: 11-99999-9999</dt>
+                    <dt>E-mail:<a href="mailto:gamemania@gamemania.com.br"><i class="fas fa-envelope-square"></i>gmania@gmania.com.br</a></dt>
+                    <dt>Atendimento de seg a sex 8h às 17h.</dt>
+                </dl>
+            </div>
+            <div class="item1">
+                <dl>
+                    <dd><a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram-square">@gmania</i>
+                    </a></dd><br>
+                    <dd><a href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook">Gmania</i>
+                    </a></dd>
+                </dl>            
+            </div>        
+        </section>
 </body>
 </html>
