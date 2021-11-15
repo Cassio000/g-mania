@@ -11,87 +11,90 @@
         <script src="https://kit.fontawesome.com/666b78af7c.js" crossorigin="anonymous"></script>
   </head>
 <body>
-    <header>
-        <nav class="menu">
-            <a class="menu-img" href="index.html">
-                <img src="imagens/logo/logo.png" alt="Game Mania" width="100px" height="40px">
-            </a>
-            <form class="menu-link">
-                <input type="search" name="query" id="query" placeholder="O que procura?">
-                <button type="submit">
-                    <i class="fa fa-search"></i>
-                </button>                
+    <main class="main">
+        <header>
+            <nav class="menu">
+                <a class="menu-img" href="index.html">
+                    <img src="imagens/logo/logo.png" alt="Game Mania" width="100px" height="40px">
+                </a>
+                <form class="menu-link">
+                    <input type="search" name="query" id="query" placeholder="O que procura?">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>                
+                </form>
+                <a class="menu-link" href="index.html"><i class="fas fa-home"></i>Home</a>
+                <a class="menu-link" href="carrinho.html"><i class="fas fa-shopping-cart"></i>Carrinho</a>
+                <a class="menu-link" href="produtos.html">Produtos</a>
+                <a class="menu-link" href="login.html"><i class="fas fa-user" _mstvisible="2">Login</i></a>
+            </nav>
+        </header>
+        
+        <section class="login">
+            <h1> Bem-vindo à pagina de login!</h1>
+            <p>Faça seu login</p> 
+        </section>
+                   
+        <section class="login">
+            <form class="login">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" maxlength="30" required autocomplete>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" maxlength="40" required autocomplete>                
+                <label for="date">Data de nascimento:</label>
+                <input type="date" id="date" required autocomplete>
+                <div class="login">SEXO:
+                    <label for="homem">H</label>
+                    <input type="radio" id="homem" name="sexo" value="HOMEM">
+                    <label for="mulher">M</label>
+                    <input type="radio" id="mulher" name="sexo" value="MULHER">
+                    <label for="outro">Outro</label>
+                    <input type="radio" id="outro" name="sexo" value="OUTRO">
+                    
+                </div>
+                
+                
+                <label for="password">Digite a senha</label>
+                <input type="password" id="password" maxlength="8" required autocomplete>
+                <label for="password">Confirme a senha</label>
+                <input type="password" id="password" maxlength="8" required autocomplete> <br>
+                <button class="button" onclick="teste()">Login</button>
             </form>
-            <a class="menu-link" href="index.html"><i class="fas fa-home"></i>Home</a>
-            <a class="menu-link" href="carrinho.html"><i class="fas fa-shopping-cart"></i>Carrinho</a>
-            <a class="menu-link" href="produtos.html">Produtos</a>
-            <a class="menu-link" href="login.html"><i class="fas fa-user" _mstvisible="2">Login</i></a>
-        </nav>
-    </header>
+        </section>
+        
     
-    <section class="container stretch">
-        <h1> Bem-vindo à pagina de login!</h1>
-        <p>Faça seu login</p> 
-    </section>
-               
-    <section class=" stretch login">
-        <form>
-            <label for="name">Nome:</label><br>
-            <input type="text" id="name" name="name" maxlength="30" required autocomplete>
-            <br><br>
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email" maxlength="40" required autocomplete>
-            <br><br>
-            <label for="date">Data de nascimento:</label><br>
-            <input type="date" id="date">
-            <br>
-            <p>Sexo:</p>
-            <label for="homem">Homem</label>
-            <input type="radio" id="homem" name="sexo" value="HOMEM">
-            <label for="mulher">Mulher</label>
-            <input type="radio" id="mulher" name="sexo" value="MULHER">
-            <label for="outro">Outro</label>
-            <input type="radio" id="outro" name="sexo" value="OUTRO">
-            <br><br>
-            <label for="password">Digite a senha</label><br>
-            <input type="password" id="password" maxlength="8" required autocomplete>
-            <br><br>
-            <label for="password">Confirme a senha</label><br>
-            <input type="password" id="password" maxlength="8" required autocomplete>
-        </form>
-    </section>
+        <section class="produtos">
+           
+            <div class="item1">
+                <dl>
+                    <dd>INSTITUCIONAL</dd>
+                    <dd><a href="institucional.html#i1">Empresa</a></dd>
+                    <dd><a href="institucional.html#i2">Como comprar</a></dd>
+                    <dd><a href="institucional.html#i3">Segurança</a></dd>
+                    <dd><a href="institucional.html#i4">Política de privacidade</a></dd>
+                    <dd><a href="institucional.html#i5">Tempo de garantia</a></dd>
+                </dl>
+            </div>
+            <div class="item1">
+                <dl>
+                    <dt>ATENDIMENTO</dt><br>
+                    <dt><i class="fas fa-phone-square-alt"></i>: 11-99999-9999</dt>
+                    <dt>E-mail:<a href="mailto:gamemania@gamemania.com.br"><i class="fas fa-envelope-square"></i>gmania@gmania.com.br</a></dt>
+                    <dt>Atendimento de seg a sex 8h às 17h.</dt>
+                </dl>
+            </div>
+            <div class="item1">
+                <dl>
+                    <dd><a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram-square">@gmania</i>
+                    </a></dd><br>
+                    <dd><a href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook">Gmania</i>
+                    </a></dd>
+                </dl>            
+            </div>        
+        </section>
+    </main>
     
-
-    <section class="flooter stretch flex">
-       
-        <div class="item1">
-            <dl>
-                <dd>INSTITUCIONAL</dd>
-                <dd><a href="institucional.html#i1">Empresa</a></dd>
-                <dd><a href="institucional.html#i2">Como comprar</a></dd>
-                <dd><a href="institucional.html#i3">Segurança</a></dd>
-                <dd><a href="institucional.html#i4">Política de privacidade</a></dd>
-                <dd><a href="institucional.html#i5">Tempo de garantia</a></dd>
-            </dl>
-        </div>
-        <div class="item1">
-            <dl>
-                <dt>ATENDIMENTO</dt><br>
-                <dt><i class="fas fa-phone-square-alt"></i>: 11-99999-9999</dt>
-                <dt>E-mail:<a href="mailto:gamemania@gamemania.com.br"><i class="fas fa-envelope-square"></i>gmania@gmania.com.br</a></dt>
-                <dt>Atendimento de seg a sex 8h às 17h.</dt>
-            </dl>
-        </div>
-        <div class="item1">
-            <dl>
-                <dd><a href="https://www.instagram.com/" target="_blank">
-                    <i class="fab fa-instagram-square">@gmania</i>
-                </a></dd><br>
-                <dd><a href="https://www.facebook.com/" target="_blank">
-                    <i class="fab fa-facebook">Gmania</i>
-                </a></dd>
-            </dl>            
-        </div>        
-    </section>
 </body>
 </html>
