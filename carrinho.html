@@ -1,72 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-  <meta charset="UTF-8">
-  <title>Site Games Mania/carrinho de compras</title>
-    <meta name="description" content="Loja de games online.">
-    <meta name="keywords" content="Jogos, Online, Games, Computador, Notebook">
-    <meta name="author" content="Cassio Carvalho">
-    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Site Games Mania</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="Jogos, Online, Games, Computador, Notebook">
+        <meta name="author" content="Cassio Carvalho">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="https://kit.fontawesome.com/666b78af7c.js" crossorigin="anonymous"></script>
-  </head>
+</head>
+
 <body>
-    <header>
-        <nav class="menu">
-            <a class="menu-img" href="index.html">
-                <img src="imagens/logo/logo.png" alt="Game Mania" width="100px" height="40px">
-            </a>
-            <form class="menu-link">
-                <input type="search" name="query" id="query" placeholder="O que procura?">
-                <button type="submit">
-                    <i class="fa fa-search"></i>
-                </button>                
-            </form>
-            <a class="menu-link" href="index.html"><i class="fas fa-home"></i>Home</a>
-            <a class="menu-link" href="carrinho.html"><i class="fas fa-shopping-cart"></i>Carrinho</a>
-            <a class="menu-link" href="produtos.html">Produtos</a>
-            <a class="menu-link" href="login.html"><i class="fas fa-user" _mstvisible="2">Login</i></a>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"> <img src="imagens/logo/logo.png" alt="Game Mania" width="100px" height="40px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link menu-link" aria-current="page" href="index.html"><i class="fas fa-home"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-link" href="carrinho.html"><i class="fas fa-shopping-cart"></i>Carrinho</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle menu-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Produtos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item menu-link" href="nintendo.html">Nintendo</a></li>
+                <li><a class="dropdown-item menu-link" href="celularpc.html">Pc e celulares</a></li>
+                <li><a class="dropdown-item menu-link" href="playstation.html">Playstation</a></li>
+                <li><a class="dropdown-item menu-link" href="xbox.html">X Box</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-link" href="login.html"><i class="fas fa-user" _mstvisible="2">Login</i></a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-1" type="search" placeholder="O que procura?" aria-label="Search">
+            <button class="btn btn-outline-success button" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <section class="container stretch">
-        <h1> Bem-vindo à página do seu carrinho!</h1>
-        <p>Aqui você encontra o conteudo do seu carrinho</p>
-    </section>
+  <section class="container stretch">
+    <h1> Bem-vindo à página do seu carrinho!</h1>
+    <p>Aqui você encontra o conteudo do seu carrinho</p>
+  </section>
 
-        <section class="produtos">
-       
-            <div class="item1">
-                <dl>
-                    <dd>INSTITUCIONAL</dd>
-                    <dd><a href="institucional.html#i1">Empresa</a></dd>
-                    <dd><a href="institucional.html#i2">Como comprar</a></dd>
-                    <dd><a href="institucional.html#i3">Segurança</a></dd>
-                    <dd><a href="institucional.html#i4">Política de privacidade</a></dd>
-                    <dd><a href="institucional.html#i5">Tempo de garantia</a></dd>
-                </dl>
-            </div>
-            <div class="item1">
-                <dl>
-                    <dt>ATENDIMENTO</dt><br>
-                    <dt><i class="fas fa-phone-square-alt"></i>: 11-99999-9999</dt>
-                    <dt>E-mail:<a href="mailto:gamemania@gamemania.com.br"><i class="fas fa-envelope-square"></i>gmania@gmania.com.br</a></dt>
-                    <dt>Atendimento de seg a sex 8h às 17h.</dt>
-                </dl>
-            </div>
-            <div class="item1">
-                <dl>
-                    <dd><a href="https://www.instagram.com/" target="_blank">
-                        <i class="fab fa-instagram-square">@gmania</i>
-                    </a></dd><br>
-                    <dd><a href="https://www.facebook.com/" target="_blank">
-                        <i class="fab fa-facebook">Gmania</i>
-                    </a></dd>
-                </dl>            
-            </div>        
-        </section>
-
-        <!--   icones
+  <section class="container-fluid">           
+    <div class="rodape">
+        <dl>
+            <dd>INSTITUCIONAL</dd>
+            <dd><a href="institucional.html#i1">Empresa</a></dd>
+            <dd><a href="institucional.html#i2">Como comprar</a></dd>
+            <dd><a href="institucional.html#i3">Segurança</a></dd>
+            <dd><a href="institucional.html#i4">Política de privacidade</a></dd>
+            <dd><a href="institucional.html#i5">Tempo de garantia</a></dd>
+        </dl>
+    </div>
+    <div class="rodape">
+        <dl>
+            <dt>ATENDIMENTO</dt><br>
+            <dt><i class="fas fa-phone-square-alt"></i>: 11-99999-9999</dt>
+            <dt>E-mail:<a href="mailto:gamemania@gamemania.com.br"><i class="fas fa-envelope-square"></i>gmania@gmania.com.br</a></dt>
+            <dt>Atendimento de seg a sex 8h às 17h.</dt>
+        </dl>
+    </div>
+    <div class="rodape">
+        <dl>
+            <dd><a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram-square">@gmania</i>
+            </a></dd><br>
+            <dd><a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook">Gmania</i>
+            </a></dd>
+        </dl>            
+    </div>        
+  </section>
+  
+  
+  <!--   icones
 
     <i class="fas fa-user" _mstvisible="2"></i>
     <i class="fas fa-home"></i>
@@ -78,9 +101,7 @@
     <i class="fab fa-instagram-square"></i>
     <i class="fab fa-whatsapp-square"></i>
     <i class="fas fa-phone-square-alt"></i>
-    <i class="fas fa-envelope-square"></i>
-
-    PFE: Quais cores você gosta e deseja que façam parte do projeto? Quais não gosta?
+    <i class="fas fa-envelope-square"></i>PFE: Quais cores você gosta e deseja que façam parte do projeto? Quais não gosta?
 C: Dê preferência ao branco para conteúdo e textos. Para destaques, fundo nas cores 
 pretas e azuis. Pode conter cores como vermelho ou verde. Não gosto e não 
 quero para esse projeto: rosa, amarelo, laranja, roxo, ciano, bege, nem marrom.
@@ -97,4 +118,6 @@ Teremos também nossas redes sociais (Facebook e Instagram) interligadas ao site
 -->
 
 </body>
+<script type="text/javascript" src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
 </html>
