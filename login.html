@@ -1,93 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Site Games Mania</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="keywords" content="Jogos, Online, Games, Computador, Notebook">
-        <meta name="author" content="Cassio Carvalho">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="https://kit.fontawesome.com/666b78af7c.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Jogos, Online, Games, Computador, Notebook">
+    <meta name="author" content="Cassio Carvalho">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/666b78af7c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main class="main">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-dark color">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"> <img src="imagens/logo/logo.png" alt="Game Mania" width="100px" height="40px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark color">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"> <img src="imagens/logo/logo.png" alt="Game Mania" width="100px" height="40px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link menu-link" aria-current="page" href="index.html"><i class="fas fa-home"></i>Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link menu-link" href="carrinho.html"><i class="fas fa-shopping-cart"></i>Carrinho</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle menu-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" aria-current="page" href="index.html"><i class="fas fa-home"></i>Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="carrinho.html"><i class="fas fa-shopping-cart"></i>Carrinho</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle menu-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Produtos
                       </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item menu-link" href="nintendo.html">Nintendo</a></li>
-                        <li><a class="dropdown-item menu-link" href="celularpc.html">Pc e celulares</a></li>
-                        <li><a class="dropdown-item menu-link" href="playstation.html">Playstation</a></li>
-                        <li><a class="dropdown-item menu-link" href="xbox.html">X Box</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link menu-link" href="login.html"><i class="fas fa-user" _mstvisible="2">Login</i></a>
-                    </li>
-                  </ul>
-                  <form class="d-flex">
-                    <input class="form-control me-1" type="search" placeholder="O que procura?" aria-label="Search">
-                    <button class="btn btn-outline-success button" type="submit"><i class="fa fa-search"></i></button>
-                  </form>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item menu-link" href="nintendo.html">Nintendo</a></li>
+                                    <li><a class="dropdown-item menu-link" href="celularpc.html">Pc e celulares</a></li>
+                                    <li><a class="dropdown-item menu-link" href="playstation.html">Playstation</a></li>
+                                    <li><a class="dropdown-item menu-link" href="xbox.html">X Box</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="login.html"><i class="fas fa-user" _mstvisible="2">Login</i></a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-1" type="search" placeholder="O que procura?" aria-label="Search">
+                            <button class="btn btn-outline-success button" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    
+            </nav>
+        </header>
+
         <section class="login">
             <h1> Bem-vindo à pagina de login!</h1>
-            <p>Faça seu login</p> 
+            <p>Faça seu login</p>
         </section>
-                   
+        <div id="res"></div>
+
         <section class="login">
             <form class="login">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" maxlength="30" required autocomplete>
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" maxlength="40" required autocomplete>                
+                <input type="email" id="email" name="email" maxlength="40" required autocomplete>
                 <label for="date">Data de nascimento:</label>
-                <input type="date" id="date" required autocomplete>
+                <input type="number" id="date" required autocomplete>
                 <div class="login">SEXO:
                     <label for="homem">H</label>
                     <input type="radio" id="homem" name="sexo" value="HOMEM">
                     <label for="mulher">M</label>
                     <input type="radio" id="mulher" name="sexo" value="MULHER">
-                    <label for="outro">Outro</label>
-                    <input type="radio" id="outro" name="sexo" value="OUTRO">
-                    
+
+
                 </div>
-                
-                
+
+
                 <label for="password">Digite a senha</label>
                 <input type="password" id="password" maxlength="8" required autocomplete>
                 <label for="password">Confirme a senha</label>
                 <input type="password" id="password" maxlength="8" required autocomplete> <br>
-                <button class="button" onclick="teste()">Login</button>
+                <input id="button" type="button" value="login" onclick="teste()">
+
+
+
             </form>
+
         </section>
-        
-    
+
+
         <section class="container">
-           
+
             <div class="rodape">
                 <dl>
                     <dd>INSTITUCIONAL</dd>
@@ -108,18 +113,23 @@
             </div>
             <div class="rodape">
                 <dl>
-                    <dd><a href="https://www.instagram.com/" target="_blank">
-                        <i class="fab fa-instagram-square">@gmania</i>
-                    </a></dd><br>
-                    <dd><a href="https://www.facebook.com/" target="_blank">
-                        <i class="fab fa-facebook">Gmania</i>
-                    </a></dd>
-                </dl>            
-            </div>        
+                    <dd>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fab fa-instagram-square">@gmania</i>
+                        </a>
+                    </dd><br>
+                    <dd>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook">Gmania</i>
+                        </a>
+                    </dd>
+                </dl>
+            </div>
         </section>
     </main>
-    
+
 </body>
 <script type="text/javascript" src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
 
 </html>
